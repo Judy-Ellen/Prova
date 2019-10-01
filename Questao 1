@@ -1,0 +1,32 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+typedef struct NO {
+    char texto;
+    struct NO * prox;
+} NO;
+
+NO* Final = NULL;
+void addTexto(char texto) {
+    No* NOind;
+    NOind = (No *) malloc(sizeof (NOind));
+    NOind->texto = texto;
+    NOind->prox = NULL;
+    if (indFinal == NULL)
+        indFinal = NOind;
+    else {
+        NOind->prox = indFinal;
+        Final  = NOind;
+    }
+}
+
+
+
+void main(){
+    
+    char txt[1024];
+    
+    printf("Insira o texto:\n");
+    scanf("%c",&txt);   
+}
